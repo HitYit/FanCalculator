@@ -1,0 +1,78 @@
+.bottom-sheet.mahjong-glossary-sheet {
+  width: min(880px, 100%);
+}
+
+.glossary-intro,
+.glossary-footnote {
+  color: var(--muted);
+  font-size: 12px;
+  line-height: 1.8;
+}
+
+.glossary-intro {
+  margin-bottom: 18px;
+}
+
+.glossary-footnote {
+  margin-top: 16px;
+}
+
+.glossary-table-scroll {
+  overflow-x: auto;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+.glossary-table {
+  width: 100%;
+  min-width: 560px;
+  border-collapse: collapse;
+  table-layout: fixed;
+  text-align: left;
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.glossary-name-column { width: 100px; }
+.glossary-example-column { width: 210px; }
+
+.glossary-table th,
+.glossary-table td {
+  padding: 16px;
+  vertical-align: middle;
+  border-bottom: 1px solid var(--border);
+}
+
+.glossary-table thead th {
+  background: var(--soft);
+  color: var(--green);
+  font-weight: 650;
+}
+
+.glossary-table tbody th {
+  color: var(--text);
+  font-weight: 650;
+}
+
+.glossary-table tbody tr:last-child > * {
+  border-bottom: 0;
+}
+
+.glossary-tiles {
+  display: flex;
+  gap: 4px;
+}
+
+.glossary-example-note {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.7;
+}
+
+@media (max-width: 700px) {
+  .glossary-name-column { width: 85px; }
+  .glossary-example-column { width: 175px; }
+  .glossary-table th,
+  .glossary-table td { padding: 12px; }
+}

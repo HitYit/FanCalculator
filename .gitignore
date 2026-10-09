@@ -1,0 +1,14 @@
+node_modules/
+dist/
+*.tsbuildinfo
+.env*
+!.env.example
+.DS_Store
+
+# Local hosting state and logs
+.netlify/
+.vercel/
+*.log
+
+# Local rule-reference screenshots (not required to build or run)
+pic/

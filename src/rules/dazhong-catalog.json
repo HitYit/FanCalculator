@@ -1,0 +1,1006 @@
+{
+  "id": "dazhong-mahjong",
+  "name": "大众麻将",
+  "groups": [
+    {
+      "name": "起胡推荐",
+      "score": "+1—4 番"
+    },
+    {
+      "name": "加倍番型",
+      "score": "×2 倍"
+    },
+    {
+      "name": "中级番型",
+      "score": "+8—32 番"
+    },
+    {
+      "name": "高级番型",
+      "score": "+36—64 番"
+    },
+    {
+      "name": "顶级番型",
+      "score": "+88 番"
+    }
+  ],
+  "rules": [
+    {
+      "name": "自摸",
+      "value": "1",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "自己抓进牌成胡牌。",
+      "excludes": "",
+      "source": 7,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-01"
+    },
+    {
+      "name": "四花",
+      "value": "2",
+      "tags": [
+        "花牌"
+      ],
+      "definition": "胡牌时，补花数量 ≥ 4 张。",
+      "excludes": "",
+      "source": 7,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-02"
+    },
+    {
+      "name": "明杠",
+      "value": "2",
+      "tags": [
+        "杠牌"
+      ],
+      "definition": "自己有暗刻，用别人打出的一张相同的牌开杠；或自己抓进一张与碰出的明刻相同的牌开杠。",
+      "excludes": "",
+      "source": 7,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-03"
+    },
+    {
+      "name": "断幺九",
+      "value": "4",
+      "tags": [
+        "幺九类"
+      ],
+      "definition": "胡牌中没有 1、9 的序数牌及字牌。",
+      "excludes": "",
+      "source": 8,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-04",
+      "example": "rules/dazhong-mahjong/example-04.jpg"
+    },
+    {
+      "name": "一般高",
+      "value": "4",
+      "tags": [
+        "顺子类"
+      ],
+      "definition": "由一种花色的 2 副相同顺子组成的牌。",
+      "excludes": "",
+      "source": 8,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-05",
+      "example": "rules/dazhong-mahjong/example-05.jpg"
+    },
+    {
+      "name": "喜相逢",
+      "value": "4",
+      "tags": [
+        "顺子类"
+      ],
+      "definition": "2 种花色的 2 副序数相同的顺子。",
+      "excludes": "",
+      "source": 9,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-06",
+      "example": "rules/dazhong-mahjong/example-06.jpg"
+    },
+    {
+      "name": "连六",
+      "value": "4",
+      "tags": [
+        "顺子类"
+      ],
+      "definition": "胡牌时，有 6 张同一花色、序数相连的牌组成 2 副顺子。",
+      "excludes": "",
+      "source": 9,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-07",
+      "example": "rules/dazhong-mahjong/example-07.jpg"
+    },
+    {
+      "name": "老少副",
+      "value": "4",
+      "tags": [
+        "顺子类"
+      ],
+      "definition": "一种花色牌的 123、789 两副顺子。",
+      "excludes": "",
+      "source": 10,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-08",
+      "example": "rules/dazhong-mahjong/example-08.jpg"
+    },
+    {
+      "name": "箭刻",
+      "value": "4",
+      "tags": [
+        "刻子类",
+        "字牌类"
+      ],
+      "definition": "手中有一副箭刻（中／发／白）。",
+      "excludes": "",
+      "source": 10,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-09",
+      "example": "rules/dazhong-mahjong/example-09.jpg"
+    },
+    {
+      "name": "场风刻",
+      "value": "4",
+      "tags": [
+        "刻子类",
+        "字牌类"
+      ],
+      "definition": "手中有一副场风（东风）刻子。",
+      "excludes": "",
+      "source": 11,
+      "note": "截图明确写的是“场风（东风）”，未说明场风是否随局数轮换。",
+      "group": "起胡推荐",
+      "id": "dazhong-10",
+      "example": "rules/dazhong-mahjong/example-10.jpg"
+    },
+    {
+      "name": "门风刻",
+      "value": "4",
+      "tags": [
+        "刻子类",
+        "字牌类"
+      ],
+      "definition": "手中有一副与本门风相同的风刻。",
+      "excludes": "",
+      "source": 11,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-11"
+    },
+    {
+      "name": "暗杠",
+      "value": "4",
+      "tags": [
+        "杠牌"
+      ],
+      "definition": "自己摸到 4 张相同的牌开杠。",
+      "excludes": "",
+      "source": 11,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-12"
+    },
+    {
+      "name": "四归一",
+      "value": "4",
+      "tags": [
+        "牌张组合"
+      ],
+      "definition": "包含 4 张相同的牌胡牌，不能杠出。",
+      "excludes": "",
+      "source": 12,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-13",
+      "example": "rules/dazhong-mahjong/example-13.jpg"
+    },
+    {
+      "name": "门清",
+      "value": "4",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "胡牌时，没有吃、碰和明杠。",
+      "excludes": "",
+      "source": 12,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-14",
+      "example": "rules/dazhong-mahjong/example-14.jpg"
+    },
+    {
+      "name": "双暗刻",
+      "value": "4",
+      "tags": [
+        "刻子类"
+      ],
+      "definition": "胡牌时有 2 个暗刻。",
+      "excludes": "",
+      "source": 13,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-15",
+      "example": "rules/dazhong-mahjong/example-15.jpg"
+    },
+    {
+      "name": "双同刻",
+      "value": "4",
+      "tags": [
+        "刻子类"
+      ],
+      "definition": "胡牌时有 2 副序数相同的刻子。",
+      "excludes": "",
+      "source": 13,
+      "note": "",
+      "group": "起胡推荐",
+      "id": "dazhong-16",
+      "example": "rules/dazhong-mahjong/example-16.jpg"
+    },
+    {
+      "name": "杠上开花",
+      "value": "x2",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "杠牌／补花后摸上的一张牌胡牌。",
+      "excludes": "",
+      "source": 15,
+      "note": "截图将“补花后胡牌”也列入本项。",
+      "group": "加倍番型",
+      "id": "dazhong-17"
+    },
+    {
+      "name": "妙手回春",
+      "value": "x2",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "自摸牌墙上最后一张牌胡牌。",
+      "excludes": "自摸",
+      "source": 15,
+      "note": "",
+      "group": "加倍番型",
+      "id": "dazhong-18"
+    },
+    {
+      "name": "海底捞月",
+      "value": "x2",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "胡打出的最后一张牌。",
+      "excludes": "",
+      "source": 15,
+      "note": "",
+      "group": "加倍番型",
+      "id": "dazhong-19"
+    },
+    {
+      "name": "抢杠胡",
+      "value": "x2",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "胡别人补杠的那张牌。",
+      "excludes": "",
+      "source": 15,
+      "note": "",
+      "group": "加倍番型",
+      "id": "dazhong-20"
+    },
+    {
+      "name": "杠上炮",
+      "value": "x2",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "胡别人杠牌后打出的那张牌。",
+      "excludes": "",
+      "source": 14,
+      "note": "",
+      "group": "加倍番型",
+      "id": "dazhong-21"
+    },
+    {
+      "name": "金钩钩",
+      "value": "8",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "手中的牌都被吃、碰、杠放倒，只剩 1 张牌单钓将。",
+      "excludes": "",
+      "source": 14,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-22",
+      "example": "rules/dazhong-mahjong/example-22.jpg"
+    },
+    {
+      "name": "带幺九（全带幺）",
+      "value": "8",
+      "tags": [
+        "幺九类"
+      ],
+      "definition": "胡牌时，每副牌、将牌都有幺牌（1、9 序数牌和字牌）。",
+      "excludes": "",
+      "source": 16,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-23",
+      "example": "rules/dazhong-mahjong/example-23.jpg"
+    },
+    {
+      "name": "五门齐",
+      "value": "8",
+      "tags": [
+        "花色类"
+      ],
+      "definition": "胡牌时，3 种序数牌、风牌、箭牌齐全。",
+      "excludes": "",
+      "source": 16,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-24",
+      "example": "rules/dazhong-mahjong/example-24.jpg"
+    },
+    {
+      "name": "混一色",
+      "value": "12",
+      "tags": [
+        "花色类"
+      ],
+      "definition": "由一种花色序数牌及字牌组成的胡牌。",
+      "excludes": "",
+      "source": 17,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-25",
+      "example": "rules/dazhong-mahjong/example-25.jpg"
+    },
+    {
+      "name": "碰碰胡",
+      "value": "12",
+      "tags": [
+        "刻子类"
+      ],
+      "definition": "由 4 副刻子（或杠）、将牌组成的胡牌。",
+      "excludes": "",
+      "source": 17,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-26",
+      "example": "rules/dazhong-mahjong/example-26.jpg"
+    },
+    {
+      "name": "双箭刻",
+      "value": "12",
+      "tags": [
+        "刻子类",
+        "字牌类"
+      ],
+      "definition": "胡牌时有 2 副箭刻（或杠）。",
+      "excludes": "箭刻",
+      "source": 19,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-27",
+      "example": "rules/dazhong-mahjong/example-27.jpg"
+    },
+    {
+      "name": "花龙",
+      "value": "12",
+      "tags": [
+        "顺子类"
+      ],
+      "definition": "3 种花色的 3 副顺子连接成 1—9 的序数牌。",
+      "excludes": "",
+      "source": 19,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-28",
+      "example": "rules/dazhong-mahjong/example-28.jpg"
+    },
+    {
+      "name": "组合龙",
+      "value": "12",
+      "tags": [
+        "牌张组合"
+      ],
+      "definition": "包含 3 种花色的 147、258、369 的 9 张序数牌组成的胡牌。",
+      "excludes": "",
+      "source": 18,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-29",
+      "example": "rules/dazhong-mahjong/example-29.jpg"
+    },
+    {
+      "name": "全不靠",
+      "value": "12",
+      "tags": [
+        "特殊结构"
+      ],
+      "definition": "由单张 3 种花色的 147、258、369 序数牌及东南西北中发白，共 16 张牌中的任何 14 张牌组成的胡牌。",
+      "excludes": "五门齐、门清",
+      "source": 18,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-30",
+      "example": "rules/dazhong-mahjong/example-30.jpg"
+    },
+    {
+      "name": "三色三同顺",
+      "value": "12",
+      "tags": [
+        "顺子类"
+      ],
+      "definition": "胡牌时，有 3 种花色、3 副序数相同的顺子。",
+      "excludes": "喜相逢",
+      "source": 20,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-31",
+      "example": "rules/dazhong-mahjong/example-31.jpg"
+    },
+    {
+      "name": "推不倒",
+      "value": "16",
+      "tags": [
+        "牌张组合"
+      ],
+      "definition": "由牌面图形没有上下区别的牌组成的胡牌，包括 1、2、3、4、5、8、9 饼，2、4、5、6、8、9 条及白板。",
+      "excludes": "",
+      "source": 20,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-32",
+      "example": "rules/dazhong-mahjong/example-32.jpg"
+    },
+    {
+      "name": "纯带幺九",
+      "value": "16",
+      "tags": [
+        "幺九类"
+      ],
+      "definition": "胡牌时，每副牌、将牌都包含 1／9 的序数牌。",
+      "excludes": "",
+      "source": 21,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-33",
+      "example": "rules/dazhong-mahjong/example-33.jpg"
+    },
+    {
+      "name": "三风刻",
+      "value": "16",
+      "tags": [
+        "刻子类",
+        "字牌类"
+      ],
+      "definition": "胡牌时包含 3 副风刻。",
+      "excludes": "小三风、门风刻、场风刻",
+      "source": 21,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-34",
+      "example": "rules/dazhong-mahjong/example-34.jpg"
+    },
+    {
+      "name": "全单",
+      "value": "16",
+      "tags": [
+        "牌张组合"
+      ],
+      "definition": "胡牌时，手牌都是单数的序数牌。",
+      "excludes": "",
+      "source": 23,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-35",
+      "example": "rules/dazhong-mahjong/example-35.jpg"
+    },
+    {
+      "name": "清龙",
+      "value": "24",
+      "tags": [
+        "顺子类"
+      ],
+      "definition": "胡牌时，有一种花色 1—9 相连接的序数牌。",
+      "excludes": "连六、老少副",
+      "source": 23,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-36",
+      "example": "rules/dazhong-mahjong/example-36.jpg"
+    },
+    {
+      "name": "一色三步高",
+      "value": "24",
+      "tags": [
+        "顺子类"
+      ],
+      "definition": "一种花色的 3 副顺子，依次递增一位数或二位数。",
+      "excludes": "一般高、老少副、喜相逢、连六",
+      "source": 22,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-37",
+      "example": "rules/dazhong-mahjong/example-37.jpg"
+    },
+    {
+      "name": "三同刻",
+      "value": "24",
+      "tags": [
+        "刻子类"
+      ],
+      "definition": "3 个序数相同的刻子（杠）。",
+      "excludes": "双同刻",
+      "source": 22,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-38",
+      "example": "rules/dazhong-mahjong/example-38.jpg"
+    },
+    {
+      "name": "三暗刻",
+      "value": "24",
+      "tags": [
+        "刻子类"
+      ],
+      "definition": "胡牌时包含 3 个暗刻。",
+      "excludes": "双暗刻",
+      "source": 24,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-39",
+      "example": "rules/dazhong-mahjong/example-39.jpg"
+    },
+    {
+      "name": "七星不靠",
+      "value": "24",
+      "tags": [
+        "特殊结构"
+      ],
+      "definition": "必须有 7 个单张的东南西北中发白，加上 3 种花色、数位按 147、258、369 中的 7 张序数牌，组成没有将牌的胡牌。",
+      "excludes": "五门齐、门清、全不靠",
+      "source": 24,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-40",
+      "example": "rules/dazhong-mahjong/example-40.jpg"
+    },
+    {
+      "name": "七对",
+      "value": "32",
+      "tags": [
+        "七对类"
+      ],
+      "definition": "由 7 个对子组成胡牌。",
+      "excludes": "门清",
+      "source": 25,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-41",
+      "example": "rules/dazhong-mahjong/example-41.jpg"
+    },
+    {
+      "name": "全双",
+      "value": "32",
+      "tags": [
+        "牌张组合"
+      ],
+      "definition": "胡牌时，手牌都是双数的序数牌。",
+      "excludes": "",
+      "source": 25,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-42",
+      "example": "rules/dazhong-mahjong/example-42.jpg"
+    },
+    {
+      "name": "清一色",
+      "value": "32",
+      "tags": [
+        "花色类"
+      ],
+      "definition": "只由一种花色序数牌组成的胡牌。",
+      "excludes": "",
+      "source": 27,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-43",
+      "example": "rules/dazhong-mahjong/example-43.jpg"
+    },
+    {
+      "name": "三连刻（一色三节高）",
+      "value": "32",
+      "tags": [
+        "刻子类"
+      ],
+      "definition": "胡牌时有一种花色的 3 副刻子，依次递增一位数字。",
+      "excludes": "一色三同顺",
+      "source": 27,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-44",
+      "example": "rules/dazhong-mahjong/example-44.jpg"
+    },
+    {
+      "name": "三同顺",
+      "value": "32",
+      "tags": [
+        "顺子类"
+      ],
+      "definition": "胡牌时有一种花色的 3 副序数相同的顺子。",
+      "excludes": "三连刻、一般高",
+      "source": 28,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-45",
+      "example": "rules/dazhong-mahjong/example-45.jpg"
+    },
+    {
+      "name": "全大",
+      "value": "32",
+      "tags": [
+        "牌张组合"
+      ],
+      "definition": "胡牌时，手牌都是 7／8／9 的序数牌。",
+      "excludes": "",
+      "source": 28,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-46",
+      "example": "rules/dazhong-mahjong/example-46.jpg"
+    },
+    {
+      "name": "全中",
+      "value": "32",
+      "tags": [
+        "牌张组合"
+      ],
+      "definition": "胡牌时，手牌都是 4／5／6 的序数牌。",
+      "excludes": "",
+      "source": 26,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-47",
+      "example": "rules/dazhong-mahjong/example-47.jpg"
+    },
+    {
+      "name": "全小",
+      "value": "32",
+      "tags": [
+        "牌张组合"
+      ],
+      "definition": "胡牌时，手牌都是 1／2／3 的序数牌。",
+      "excludes": "",
+      "source": 26,
+      "note": "",
+      "group": "中级番型",
+      "id": "dazhong-48",
+      "example": "rules/dazhong-mahjong/example-48.jpg"
+    },
+    {
+      "name": "一色四步高",
+      "value": "36",
+      "tags": [
+        "顺子类",
+        "花色类"
+      ],
+      "definition": "一种花色的 4 副顺子，依次递增一位数或二位数。",
+      "excludes": "一色三步高、一般高、老少副、喜相逢、连六",
+      "source": 29,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-49",
+      "example": "rules/dazhong-mahjong/example-49.jpg"
+    },
+    {
+      "name": "十二金钗（三杠）",
+      "value": "36",
+      "tags": [
+        "杠牌"
+      ],
+      "definition": "胡牌时，手中有 3 副杠牌。",
+      "excludes": "",
+      "source": 29,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-50",
+      "example": "rules/dazhong-mahjong/example-50.jpg"
+    },
+    {
+      "name": "混幺九",
+      "value": "36",
+      "tags": [
+        "幺九类"
+      ],
+      "definition": "只由序数牌 1／9 和字牌组成的胡牌。",
+      "excludes": "碰碰胡、双同刻、全带幺、混一色",
+      "source": 31,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-51",
+      "example": "rules/dazhong-mahjong/example-51.jpg"
+    },
+    {
+      "name": "四同顺",
+      "value": "48",
+      "tags": [
+        "顺子类",
+        "花色类"
+      ],
+      "definition": "一种花色的 4 副序数相同的顺子。",
+      "excludes": "一色三节高、一般高、四归一、一色三同顺、老少副、缺一门",
+      "source": 31,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-52",
+      "example": "rules/dazhong-mahjong/example-52.jpg"
+    },
+    {
+      "name": "四连刻（一色四节高）",
+      "value": "48",
+      "tags": [
+        "刻子类",
+        "花色类"
+      ],
+      "definition": "一种花色的 4 副刻子，依次递增一位数。",
+      "excludes": "三同顺、三连刻、碰碰胡",
+      "source": 35,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-53",
+      "example": "rules/dazhong-mahjong/example-53.jpg"
+    },
+    {
+      "name": "清幺九",
+      "value": "64",
+      "tags": [
+        "幺九类"
+      ],
+      "definition": "只由序数牌 1／9 组成的胡牌。",
+      "excludes": "碰碰胡、双同刻、全带幺",
+      "source": 35,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-54",
+      "example": "rules/dazhong-mahjong/example-54.jpg"
+    },
+    {
+      "name": "小四喜",
+      "value": "64",
+      "tags": [
+        "字牌类"
+      ],
+      "definition": "胡牌时，有风牌的 3 副刻子及 1 对将牌。",
+      "excludes": "场风刻、门风刻、三风刻、小三风",
+      "source": 30,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-55",
+      "example": "rules/dazhong-mahjong/example-55.jpg"
+    },
+    {
+      "name": "小三元",
+      "value": "64",
+      "tags": [
+        "字牌类"
+      ],
+      "definition": "胡牌时，有箭牌的 2 副刻子及 1 对将牌。",
+      "excludes": "箭刻、双箭刻",
+      "source": 30,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-56",
+      "example": "rules/dazhong-mahjong/example-56.jpg"
+    },
+    {
+      "name": "字一色",
+      "value": "64",
+      "tags": [
+        "花色类",
+        "字牌类"
+      ],
+      "definition": "由字牌的刻子（杠）、将组成的胡牌。",
+      "excludes": "碰碰胡、混幺九、全带幺",
+      "source": 33,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-57",
+      "example": "rules/dazhong-mahjong/example-57.jpg"
+    },
+    {
+      "name": "四暗刻",
+      "value": "64",
+      "tags": [
+        "刻子类"
+      ],
+      "definition": "4 个暗刻（暗杠）。",
+      "excludes": "门清、碰碰胡、三暗刻、双暗刻",
+      "source": 33,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-58",
+      "example": "rules/dazhong-mahjong/example-58.jpg"
+    },
+    {
+      "name": "一色双龙会",
+      "value": "64",
+      "tags": [
+        "花色类",
+        "七对类"
+      ],
+      "definition": "一种花色的两个老少副，5 为将牌。",
+      "excludes": "七对、清一色、一般高、老少副",
+      "source": 36,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-59",
+      "example": "rules/dazhong-mahjong/example-59.jpg"
+    },
+    {
+      "name": "人胡",
+      "value": "64",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "发完手牌后，非庄家第一轮就吃胡。如在第一次摸牌前有任意玩家吃、碰、杠，则不算人胡。",
+      "excludes": "",
+      "source": 36,
+      "note": "",
+      "group": "高级番型",
+      "id": "dazhong-60"
+    },
+    {
+      "name": "大四喜",
+      "value": "88",
+      "tags": [
+        "字牌类"
+      ],
+      "definition": "由 4 副风刻（杠）组成的胡牌。",
+      "excludes": "场风刻、门风刻、三风刻、小三风、碰碰胡",
+      "source": 34,
+      "note": "",
+      "group": "顶级番型",
+      "id": "dazhong-61",
+      "example": "rules/dazhong-mahjong/example-61.jpg"
+    },
+    {
+      "name": "大三元",
+      "value": "88",
+      "tags": [
+        "字牌类"
+      ],
+      "definition": "胡牌中，有中、发、白 3 副刻子。",
+      "excludes": "箭刻、双箭刻",
+      "source": 34,
+      "note": "本截图底部的示例牌被截断，定义及“不计”关系可完整读取。",
+      "group": "顶级番型",
+      "id": "dazhong-62"
+    },
+    {
+      "name": "绿一色",
+      "value": "88",
+      "tags": [
+        "花色类"
+      ],
+      "definition": "由 2、3、4、6、8 条及发字中的任何牌，组成顺子、刻子、将的胡牌。",
+      "excludes": "混一色",
+      "source": 32,
+      "note": "",
+      "group": "顶级番型",
+      "id": "dazhong-63",
+      "example": "rules/dazhong-mahjong/example-63.jpg"
+    },
+    {
+      "name": "十八罗汉（四杠）",
+      "value": "88",
+      "tags": [
+        "杠牌"
+      ],
+      "definition": "胡牌时，手中有 4 副杠牌。",
+      "excludes": "碰碰胡、十二金钗、金钩钩",
+      "source": 32,
+      "note": "",
+      "group": "顶级番型",
+      "id": "dazhong-64",
+      "example": "rules/dazhong-mahjong/example-64.jpg"
+    },
+    {
+      "name": "连七对",
+      "value": "88",
+      "tags": [
+        "七对类"
+      ],
+      "definition": "由同一花色序数牌组成序数相连的 7 个对子的胡牌。",
+      "excludes": "清一色、门清、七对",
+      "source": 37,
+      "note": "",
+      "group": "顶级番型",
+      "id": "dazhong-65",
+      "example": "rules/dazhong-mahjong/example-65.jpg"
+    },
+    {
+      "name": "大七星",
+      "value": "88",
+      "tags": [
+        "七对类",
+        "字牌类"
+      ],
+      "definition": "胡牌为七种字牌做出的七对。",
+      "excludes": "字一色、七对",
+      "source": 37,
+      "note": "",
+      "group": "顶级番型",
+      "id": "dazhong-66",
+      "example": "rules/dazhong-mahjong/example-66.jpg"
+    },
+    {
+      "name": "九莲宝灯",
+      "value": "88",
+      "tags": [
+        "顺子类",
+        "花色类"
+      ],
+      "definition": "由一种花色序数牌组成“1112345678999”特定牌型，见同花色任何 1 张序数牌即可胡牌。",
+      "excludes": "清一色、门清",
+      "source": 39,
+      "note": "",
+      "group": "顶级番型",
+      "id": "dazhong-67",
+      "example": "rules/dazhong-mahjong/example-67.jpg"
+    },
+    {
+      "name": "十三幺",
+      "value": "88",
+      "tags": [
+        "幺九类"
+      ],
+      "definition": "由 3 种序数牌的 1／9 牌、七种字牌及其中一对作将组成的胡牌。",
+      "excludes": "五门齐、门清、全带幺",
+      "source": 39,
+      "note": "",
+      "group": "顶级番型",
+      "id": "dazhong-68",
+      "example": "rules/dazhong-mahjong/example-68.jpg"
+    },
+    {
+      "name": "天胡",
+      "value": "88",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "庄家发完手牌后直接胡牌。",
+      "excludes": "",
+      "source": 38,
+      "note": "",
+      "group": "顶级番型",
+      "id": "dazhong-69"
+    },
+    {
+      "name": "地胡",
+      "value": "88",
+      "tags": [
+        "胡牌方式"
+      ],
+      "definition": "发完手牌后，非庄家第一次摸牌就自摸胡牌。如在第一次摸牌前有任意玩家吃、碰、杠，则不算地胡。",
+      "excludes": "",
+      "source": 38,
+      "note": "",
+      "group": "顶级番型",
+      "id": "dazhong-70"
+    }
+  ]
+}
